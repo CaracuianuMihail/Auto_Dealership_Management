@@ -69,7 +69,7 @@ AutoDealershipManagement/
 
 ## 📌 Contributions
 This project was made as a year project within the Technical University of Moldova, discipline *Software Design Techniques and Mechanisms*.
-**Author:** Caracuianu Mihail
-**Coordinator:** asis. univ. Cebotari Daria
+- **Author:** Caracuianu Mihail
+- **Coordinator:** asis. univ. Cebotari Daria
 
 🛠️ If you like the project, don't forget to give it a ⭐ and contribute with ideas for improvement!
