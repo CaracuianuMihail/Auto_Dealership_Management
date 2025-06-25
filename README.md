@@ -58,14 +58,14 @@ The project is built according to modern **software engineering** principles:
 
 ## 📂 Project structure (example)
 AutoDealershipManagement/
-├── Forms/ # Graphical Interface (WinForms)
-├── Business/ # Business Logic
-├── Data/ # Data Access (Repos, Models)
-├── Models/ # Entities and Interfaces
-├── Patterns/ # Implementations for Design Patterns
-├── Resources/ # Images, CSV files, etc.
-├── Program.cs # Entry Point
-└── AutoDealershipManagement.sln
+- ├── Forms/ # Graphical Interface (WinForms)
+- ├── Business/ # Business Logic
+- ├── Data/ # Data Access (Repos, Models)
+- ├── Models/ # Entities and Interfaces
+- ├── Patterns/ # Implementations for Design Patterns
+- ├── Resources/ # Images, CSV files, etc.
+- ├── Program.cs # Entry Point
+- └── AutoDealershipManagement.sln
 
 ## 📌 Contributions
 This project was made as a year project within the Technical University of Moldova, discipline *Software Design Techniques and Mechanisms*.
