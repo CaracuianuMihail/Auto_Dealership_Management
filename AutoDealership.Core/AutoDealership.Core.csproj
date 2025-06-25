@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBD7D8C7-7990-4B64-83AD-17EDAD331542}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoDealership.Core</RootNamespace>
+    <AssemblyName>AutoDealership.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\ApprovedState.cs" />
+    <Compile Include="Entities\CanceledState.cs" />
+    <Compile Include="Entities\Car.cs" />
+    <Compile Include="Entities\CarCollection.cs" />
+    <Compile Include="Entities\CarCsvAdapter.cs" />
+    <Compile Include="Entities\CarExportModel.cs" />
+    <Compile Include="Entities\CarImageProxy.cs" />
+    <Compile Include="Entities\CsvExporter.cs" />
+    <Compile Include="Entities\CustomCar.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\DeliveredState.cs" />
+    <Compile Include="Entities\FilteredCarIterator.cs" />
+    <Compile Include="Entities\LoyaltyDiscountStrategy.cs" />
+    <Compile Include="Entities\NoDiscountStrategy.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\PendingState.cs" />
+    <Compile Include="Entities\RealCarImage.cs" />
+    <Compile Include="Entities\SeasonalDiscountStrategy.cs" />
+    <Compile Include="Interfaces\ICarCollection.cs" />
+    <Compile Include="Interfaces\ICarExporter.cs" />
+    <Compile Include="Interfaces\ICarIterator.cs" />
+    <Compile Include="Interfaces\ICarService.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\IContract.cs" />
+    <Compile Include="Interfaces\ICustomCarBuilder.cs" />
+    <Compile Include="Interfaces\ICustomerService.cs" />
+    <Compile Include="Interfaces\IDiscountStrategy.cs" />
+    <Compile Include="Interfaces\IDocumentFactory.cs" />
+    <Compile Include="Interfaces\IExporter.cs" />
+    <Compile Include="Interfaces\IInvoice.cs" />
+    <Compile Include="Interfaces\ICarImage.cs" />
+    <Compile Include="Interfaces\IOffer.cs" />
+    <Compile Include="Interfaces\IOrderService.cs" />
+    <Compile Include="Interfaces\IOrderState.cs" />
+    <Compile Include="Interfaces\ITestDrive.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
